@@ -13,15 +13,15 @@ Application is secured with JWT token,
 so after you create user
 (on link http://localhost:8080/api/v1/auth/register)
 
-you need to copy auto-generated token and paste it whenever you want to use a resource
+you need to copy auto-generated token and paste it whenever you want to use a resource <br/>
+(if your api-tester won't do it itself)
 
 __Only admin users can create new categories and posts__
 
-Roles ROLE_ADMIN and ROLE_USER are created automatically, but new user default role is ROLE_USER
-
+Roles ROLE_ADMIN and ROLE_USER are created automatically, but new user __default role is ROLE_USER__ <br/>
 if you want to create a user with admin rights, you have to change their role manually (in DB: change role_id in table users_roles)
 
-## CLOTHE
+## POST
 
 | STATUS | LINKS                                 | REQUEST CODE  | RETURN TYPE                     | PARAMETERS        | ACCESS |
 |--------|---------------------------------------|---------------|---------------------------------|-------------------|--------|
